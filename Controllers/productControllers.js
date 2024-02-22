@@ -10,7 +10,6 @@ const getProducts = async (req,res)=>{
 console.log(err);
 res.send("an error occured")
     }
-
 }
 
  const postProducts = async (req,res)=>{
