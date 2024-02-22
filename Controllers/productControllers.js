@@ -1,7 +1,4 @@
 import Product from "../model/productSchema.js"
-
-
-
 const getProducts = async (req,res)=>{
     
     try{
