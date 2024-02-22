@@ -1,0 +1,30 @@
+
+
+Basic query syntax
+
+Select
+Select * from products - mysql
+
+const db = connected mongodb database
+db.products.find() - mongodb database 
+
+
+Select * from products where price = 100 - mysql syntax
+db.products.find({price:100}) - mongodb syntax
+
+
+Add
+Insert into products (name, price) values ('product1', 100) - mysql syntax
+db.products.insert({name:'product1', price:100}) - mongodb syntax
+
+
+
+Delete
+Delete from products where price = 100 - mysql syntax
+db.products.delete({price:100}) - mongodb syntax
+
+
+
+Update
+Update products set price = 200 where name = 'product1' - mysql syntax
+db.products.update({name:'Red Bag'}, {$set:{price:200}}) - mongodb syntax
