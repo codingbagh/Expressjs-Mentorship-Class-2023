@@ -13,12 +13,7 @@ const GetUser = async(req,res)=>{
 }
 
 const PostUser = async(req,res)=>{
-   const fullname = req.body.fullname
-   const email = req.body.email
-   const phonenumber = req.body.phonenumber
-   const gender = req.body.gender
-   const ecb = req.body.ecb
-  const  he = req.body.he
+   
     try {
         Bootcamp.create(req.body)
         res.send("data inserted sucessfully")
